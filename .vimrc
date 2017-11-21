@@ -5,6 +5,11 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+
 " let Vundle manage Vundle
  Plugin 'gmarik/Vundle.vim'
 
@@ -18,7 +23,7 @@ Plugin 'rakr/vim-one'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-au BufNewFile,BufRead *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79  expandtab autoindent fileformat=unix
+autocmd Filetype python setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79  expandtab autoindent fileformat=unix
 
 let python_highlight_all=1
 syntax on
