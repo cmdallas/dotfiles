@@ -1,3 +1,6 @@
+" setup vundle: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" install plugins: vim +PluginInstall +qall
+
 set nocompatible              " required
 filetype off                  " required
 
